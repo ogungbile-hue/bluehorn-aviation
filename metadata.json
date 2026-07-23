@@ -1,0 +1,6 @@
+{
+  "name": "Aero Premium Landing Page",
+  "description": "A modern, ultra-premium dark mode landing page with a GSAP scroll-scrubbing background video and glassmorphic navbar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

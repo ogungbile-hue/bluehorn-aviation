@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .glass-card {
+    background: rgba(10, 15, 26, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card-hover {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-card-hover:hover {
+    background: rgba(18, 25, 40, 0.85);
+    border-color: rgba(197, 160, 89, 0.4);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 20px 0 rgba(197, 160, 89, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .glass-nav {
+    background: rgba(5, 8, 15, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #FFF 0%, #E2D1B3 50%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cyan-gold-text {
+    background: linear-gradient(135deg, #E2F1FF 0%, #7DD3FC 40%, #C5A059 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-button {
+    background: linear-gradient(135deg, #C5A059 0%, #9E7C3B 100%);
+    color: #0A0F1A;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .gold-button:hover {
+    background: linear-gradient(135deg, #D4B06A 0%, #B38E4A 100%);
+    box-shadow: 0 0 25px rgba(197, 160, 89, 0.4);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #05080f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
