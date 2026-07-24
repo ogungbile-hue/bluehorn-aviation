@@ -43,9 +43,6 @@ export function Navbar({ onOpenBookingModal }: NavbarProps) {
               <span className="text-white text-base md:text-lg font-bold tracking-[0.25em] uppercase font-sans leading-none gold-gradient-text">
                 BLUEHORN
               </span>
-              <span className="text-[9px] font-semibold tracking-wider text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-1.5 py-0.5 rounded uppercase">
-                NG
-              </span>
             </div>
             <span className="text-[10px] md:text-[11px] text-gray-400 font-light tracking-[0.35em] uppercase leading-tight mt-0.5">
               AVIATION • ABUJA
