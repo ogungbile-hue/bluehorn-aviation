@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plane, ShieldCheck, ArrowUpRight, ChevronRight, MapPin } from 'lucide-react';
+import { Plane, ArrowUpRight, ChevronRight, MapPin } from 'lucide-react';
 
 interface FleetItem {
   id: string;
@@ -121,9 +121,6 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
               <div className="flex items-center gap-3">
                 <span className="px-3 py-1 rounded-md bg-[#C5A059]/15 border border-[#C5A059]/40 text-[#C5A059] text-[10px] uppercase tracking-widest font-semibold">
                   {activeJet.category}
-                </span>
-                <span className="text-xs text-gray-400 uppercase tracking-widest flex items-center gap-1">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" /> NCAA Approved
                 </span>
               </div>
 
