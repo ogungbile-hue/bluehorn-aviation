@@ -60,7 +60,7 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
 
       {/* Flight Estimator / Search Bar Container */}
       <div className="w-full max-w-5xl mx-auto mt-16 pointer-events-auto">
-        <div className="glass-card p-6 md:p-8 rounded-2xl border border-white/15 shadow-2xl backdrop-blur-xl">
+        <div className="glass-card p-6 md:p-8 rounded-2xl border border-white/15 shadow-2xl">
           {/* Trip Type Selector Header */}
           <div className="flex items-center justify-between mb-6 border-b border-white/10 pb-4">
             <div className="flex items-center gap-4">
