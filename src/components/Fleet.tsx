@@ -97,12 +97,12 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
         </div>
 
         {/* Fleet Selection Navigation Tabs */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex overflow-x-auto sm:flex-wrap gap-2 sm:gap-3 pb-2 sm:pb-0 scrollbar-none">
           {fleetData.map((jet) => (
             <button
               key={jet.id}
               onClick={() => setActiveJet(jet)}
-              className={`px-5 py-3 rounded-xl text-xs uppercase tracking-wider font-medium transition-all cursor-pointer ${
+              className={`px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl text-[11px] sm:text-xs uppercase tracking-wider font-medium transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 activeJet.id === jet.id
                   ? 'bg-[#C5A059] text-black shadow-xl font-semibold scale-105'
                   : 'glass-card text-gray-300 hover:text-white hover:bg-white/10'
@@ -116,53 +116,53 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
         {/* Selected Jet Feature Detail Card */}
         <div className="glass-card rounded-3xl overflow-hidden border border-white/15 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-0">
           {/* Left Spec Details */}
-          <div className="lg:col-span-7 p-8 md:p-12 flex flex-col justify-between space-y-8">
-            <div className="space-y-6">
+          <div className="lg:col-span-7 p-6 sm:p-8 md:p-12 flex flex-col justify-between space-y-6 sm:space-y-8">
+            <div className="space-y-5 sm:space-y-6">
               <div className="flex items-center gap-3">
                 <span className="px-3 py-1 rounded-md bg-[#C5A059]/15 border border-[#C5A059]/40 text-[#C5A059] text-[10px] uppercase tracking-widest font-semibold">
                   {activeJet.category}
                 </span>
               </div>
 
-              <h3 className="text-3xl md:text-4xl font-light text-white uppercase tracking-wide">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-light text-white uppercase tracking-wide">
                 {activeJet.name}
               </h3>
 
               {/* Route Highlight Pill */}
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-black/60 border border-[#C5A059]/30 text-xs text-gray-200">
-                <MapPin className="w-3.5 h-3.5 text-[#C5A059]" />
+              <div className="flex items-start sm:items-center gap-2 px-3 py-2 rounded-lg bg-black/60 border border-[#C5A059]/30 text-xs text-gray-200 leading-normal">
+                <MapPin className="w-3.5 h-3.5 text-[#C5A059] shrink-0 mt-0.5 sm:mt-0" />
                 <span>{activeJet.routeHighlight}</span>
               </div>
 
               {/* Specs Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4 border-t border-b border-white/10 py-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 pt-4 border-t border-b border-white/10 py-5 sm:py-6">
                 <div>
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-medium">Range</span>
-                  <span className="text-sm md:text-base font-semibold text-white mt-1 block gold-gradient-text">
+                  <span className="text-xs sm:text-sm md:text-base font-semibold text-white mt-1 block gold-gradient-text">
                     {activeJet.range}
                   </span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-medium">Cruise Speed</span>
-                  <span className="text-sm md:text-base font-semibold text-white mt-1 block">
+                  <span className="text-xs sm:text-sm md:text-base font-semibold text-white mt-1 block">
                     {activeJet.speed}
                   </span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-medium">Capacity</span>
-                  <span className="text-sm md:text-base font-semibold text-white mt-1 block">
+                  <span className="text-xs sm:text-sm md:text-base font-semibold text-white mt-1 block">
                     {activeJet.passengers}
                   </span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-medium">Cabin Height</span>
-                  <span className="text-sm md:text-base font-semibold text-white mt-1 block">
+                  <span className="text-xs sm:text-sm md:text-base font-semibold text-white mt-1 block">
                     {activeJet.cabinHeight}
                   </span>
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-medium">Baggage Vol</span>
-                  <span className="text-sm md:text-base font-semibold text-white mt-1 block">
+                  <span className="text-xs sm:text-sm md:text-base font-semibold text-white mt-1 block">
                     {activeJet.baggageCapacity}
                   </span>
                 </div>
@@ -185,10 +185,10 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
             </div>
 
             {/* Action CTA */}
-            <div className="pt-6 flex flex-wrap items-center gap-4">
+            <div className="pt-4 sm:pt-6 flex flex-wrap items-center gap-4">
               <button
                 onClick={() => onSelectAircraft(activeJet.name)}
-                className="gold-button text-xs uppercase tracking-[0.2em] px-8 py-3.5 rounded-xl flex items-center gap-2 shadow-xl cursor-pointer"
+                className="gold-button text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] px-6 sm:px-8 py-3.5 rounded-xl flex items-center justify-center gap-2 shadow-xl cursor-pointer w-full sm:w-auto"
               >
                 <span>Charter {activeJet.name}</span>
                 <ArrowUpRight className="w-4 h-4" />

@@ -18,40 +18,40 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
   };
 
   return (
-    <section className="relative min-h-screen pt-32 pb-20 flex flex-col justify-between items-center px-6 lg:px-10 z-20 pointer-events-none">
+    <section className="relative min-h-screen pt-28 sm:pt-32 pb-16 sm:pb-20 flex flex-col justify-between items-center px-4 sm:px-6 lg:px-10 z-20 pointer-events-none">
       {/* Top Tagline & Branding Headline */}
-      <div className="max-w-4xl mx-auto text-center mt-12 md:mt-20 pointer-events-auto space-y-6">
+      <div className="max-w-4xl mx-auto text-center mt-8 sm:mt-12 md:mt-20 pointer-events-auto space-y-5 sm:space-y-6">
         {/* Floating Luxury Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#C5A059]/40 backdrop-blur-md shadow-xl">
-          <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />
-          <span className="text-[11px] uppercase tracking-[0.3em] font-semibold text-[#E2D1B3]">
+        <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-white/5 border border-[#C5A059]/40 backdrop-blur-md shadow-xl max-w-full">
+          <Sparkles className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+          <span className="text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.3em] font-semibold text-[#E2D1B3] truncate">
             NIGERIA'S PREMIER JET AUTHORITY
           </span>
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extralight tracking-tight text-white uppercase leading-[1.1]">
+        <h1 className="text-3xl sm:text-6xl lg:text-7xl font-extralight tracking-tight text-white uppercase leading-[1.15] sm:leading-[1.1]">
           Excellence <br />
           <span className="font-semibold gold-gradient-text">Above The Clouds</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="text-gray-300 text-sm md:text-lg font-light tracking-wide max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+        <p className="text-gray-300 text-xs sm:text-base md:text-lg font-light tracking-wide max-w-2xl mx-auto leading-relaxed drop-shadow-md">
           Headquartered in <strong className="text-white font-medium">Abuja, Nigeria</strong>—providing bespoke executive jet charters, diplomatic air transport, and transcontinental private flight logistics across West Africa and global capitals.
         </p>
 
         {/* Action Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-2">
           <button
             onClick={onOpenBookingModal}
-            className="gold-button text-xs uppercase tracking-[0.2em] px-8 py-3.5 rounded-xl flex items-center gap-3 shadow-2xl cursor-pointer"
+            className="gold-button text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] px-6 sm:px-8 py-3.5 rounded-xl flex items-center justify-center gap-3 shadow-2xl cursor-pointer w-full sm:w-auto"
           >
             <span>Request Flight Quote</span>
             <ArrowRight className="w-4 h-4" />
           </button>
           <a
             href="#fleet"
-            className="glass-card hover:bg-white/10 text-white text-xs uppercase tracking-[0.2em] px-8 py-3.5 rounded-xl border border-white/20 transition-all"
+            className="glass-card hover:bg-white/10 text-white text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] px-6 sm:px-8 py-3.5 rounded-xl border border-white/20 transition-all text-center w-full sm:w-auto"
           >
             View Flagship Fleet
           </a>
