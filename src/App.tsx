@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { BackgroundVideo } from './components/BackgroundVideo';
 import { Navbar } from './components/Navbar';
 import { HeroOverlay } from './components/HeroOverlay';
@@ -8,10 +8,25 @@ import { Services } from './components/Services';
 import { SafetyStats } from './components/SafetyStats';
 import { Footer } from './components/Footer';
 import { CharterBookingModal } from './components/CharterBookingModal';
+import { Preloader } from './components/Preloader';
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [selectedAircraft, setSelectedAircraft] = useState<string | undefined>(undefined);
+
+  const handleVideoLoaded = useCallback(() => {
+    setIsLoading(false);
+  }, []);
+
+  useEffect(() => {
+    // Fallback timer: dismiss preloader after 2.5s if video loading takes time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleOpenBooking = (aircraftName?: string) => {
     setSelectedAircraft(aircraftName);
@@ -25,8 +40,11 @@ export default function App() {
 
   return (
     <div className="bg-[#05080f] min-h-screen text-white font-sans selection:bg-[#C5A059] selection:text-black relative overflow-hidden">
+      {/* Luxury Airplane Preloader Screen */}
+      <Preloader isLoading={isLoading} />
+
       {/* GSAP ScrollTrigger Background Video */}
-      <BackgroundVideo />
+      <BackgroundVideo onLoaded={handleVideoLoaded} />
 
       {/* Navigation Bar with Logo & Actions */}
       <Navbar onOpenBookingModal={() => handleOpenBooking()} />
