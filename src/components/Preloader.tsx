@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Plane } from 'lucide-react';
-import logo from '../assets/images/bluehorn-logo.png';
+import logo from '../../assets/images/bluehorn-logo.png';
 
 interface PreloaderProps {
   isLoading: boolean;
