@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body, html {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .glass-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(8, 12, 20, 0.65) 100%);
@@ -56,10 +65,6 @@
     background: linear-gradient(135deg, #D4B06A 0%, #B38E4A 100%);
     box-shadow: 0 0 25px rgba(197, 160, 89, 0.4);
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* Custom Luxury Scrollbar */
