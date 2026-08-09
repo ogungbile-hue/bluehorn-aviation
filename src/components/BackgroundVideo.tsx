@@ -131,8 +131,8 @@ export function BackgroundVideo({ onLoaded }: BackgroundVideoProps) {
           willChange: 'transform',
         }}
       />
-      {/* Dark overlay for text readability (z-index: 10) */}
-      <div className="absolute inset-0 bg-black/50 z-10 pointer-events-none" />
+      {/* Dark overlay for text readability & glass depth (z-index: 10) */}
+      <div className="absolute inset-0 bg-[#05080f]/60 z-10 pointer-events-none" />
     </div>
   );
 }
