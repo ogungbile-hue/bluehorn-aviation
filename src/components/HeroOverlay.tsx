@@ -25,7 +25,7 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-[#C5A059]/40 backdrop-blur-md shadow-xl">
           <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />
           <span className="text-[11px] uppercase tracking-[0.3em] font-semibold text-[#E2D1B3]">
-            NIGERIA'S PREMIER PRIVATE JET AUTHORITY
+            NIGERIA'S PREMIER JET AUTHORITY
           </span>
         </div>
 
@@ -67,22 +67,20 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
               <button
                 type="button"
                 onClick={() => setTripType('one-way')}
-                className={`text-xs uppercase tracking-widest px-4 py-1.5 rounded-lg transition-all ${
-                  tripType === 'one-way'
+                className={`text-xs uppercase tracking-widest px-4 py-1.5 rounded-lg transition-all ${tripType === 'one-way'
                     ? 'bg-[#C5A059] text-black font-semibold shadow-md'
                     : 'text-gray-400 hover:text-white'
-                }`}
+                  }`}
               >
                 One Way
               </button>
               <button
                 type="button"
                 onClick={() => setTripType('round-trip')}
-                className={`text-xs uppercase tracking-widest px-4 py-1.5 rounded-lg transition-all ${
-                  tripType === 'round-trip'
+                className={`text-xs uppercase tracking-widest px-4 py-1.5 rounded-lg transition-all ${tripType === 'round-trip'
                     ? 'bg-[#C5A059] text-black font-semibold shadow-md'
                     : 'text-gray-400 hover:text-white'
-                }`}
+                  }`}
               >
                 Round Trip
               </button>
