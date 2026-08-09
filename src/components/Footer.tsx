@@ -14,12 +14,12 @@ export function Footer() {
   };
 
   const hubs = [
-    { city: 'Abuja (ABV) • HQ', location: 'Nnamdi Azikiwe Int Airport (Presidential Wing)' },
     { city: 'Lagos (LOS)', location: 'Murtala Muhammed Int Airport (MM2 Executive Hangar)' },
     { city: 'Port Harcourt (PHC)', location: 'Port Harcourt Int Airport (Oil & Gas Terminal)' },
     { city: 'Kano (KAN)', location: 'Mallam Aminu Kano Int Airport' },
     { city: 'London (FAB)', location: 'Farnborough Airport, United Kingdom' },
     { city: 'Dubai (DWC)', location: 'Al Maktoum Int Airport, United Arab Emirates' },
+    { city: 'Paris (LBG)', location: 'Paris Le Bourget Airport, France' },
   ];
 
   return (
@@ -35,7 +35,7 @@ export function Footer() {
               Subscribe to VIP <span className="gold-gradient-text font-semibold">Empty-Leg Deals</span>
             </h3>
             <p className="text-xs text-gray-400 max-w-lg">
-              Receive instant notification on discounted repositioning legs between Abuja, Lagos, London, Dubai, and European capitals.
+              Receive instant notification on discounted repositioning legs between Lagos, London, Dubai, and European capitals.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export function Footer() {
             ) : (
               <div className="flex items-center gap-2 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-6 py-3.5 rounded-xl">
                 <Check className="w-4 h-4" />
-                <span>Subscribed to Bluehorn Abuja Dispatch Alerts</span>
+                <span>Subscribed to VIP Dispatch Alerts</span>
               </div>
             )}
           </form>
@@ -85,7 +85,7 @@ export function Footer() {
                   </span>
                 </div>
                 <span className="text-[10px] text-gray-400 tracking-[0.35em] uppercase">
-                  AVIATION • ABUJA
+                  PRIVATE AVIATION
                 </span>
               </div>
             </a>
@@ -109,7 +109,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-2 text-gray-300">
                 <MapPin className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
-                <span>Plot 462 Constitution Avenue, Central Business District, Abuja, FCT, Nigeria</span>
+                <span>Plot 462 Constitution Avenue, Central Business District, Federal Capital Territory, Nigeria</span>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ export function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-xs font-semibold text-white uppercase tracking-[0.25em] border-b border-white/10 pb-2">
-              Abuja Fleet
+              Flagship Fleet
             </h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#fleet" className="hover:text-[#C5A059] transition-colors">Gulfstream G650ER</a></li>

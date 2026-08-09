@@ -7,8 +7,8 @@ interface HeroOverlayProps {
 
 export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
   const [tripType, setTripType] = useState<'one-way' | 'round-trip'>('one-way');
-  const [origin, setOrigin] = useState('Abuja (ABV)');
-  const [destination, setDestination] = useState('Lagos (LOS)');
+  const [origin, setOrigin] = useState('Lagos (LOS)');
+  const [destination, setDestination] = useState('London (FAB)');
   const [departureDate, setDepartureDate] = useState('');
   const [passengers, setPassengers] = useState('4');
 
@@ -37,7 +37,7 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
 
         {/* Subtitle */}
         <p className="text-gray-300 text-xs sm:text-base md:text-lg font-light tracking-wide max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-          Headquartered in <strong className="text-white font-medium">Abuja, Nigeria</strong>—providing bespoke executive jet charters, diplomatic air transport, and transcontinental private flight logistics across West Africa and global capitals.
+          West Africa's premier private aviation operator—providing bespoke executive jet charters, diplomatic air transport, and transcontinental private flight logistics across major regional hubs and global capitals.
         </p>
 
         {/* Action Pills */}
@@ -96,11 +96,11 @@ export function HeroOverlay({ onOpenBookingModal }: HeroOverlayProps) {
             {/* Origin */}
             <div className="space-y-1.5">
               <label className="text-[10px] text-gray-400 uppercase tracking-widest flex items-center gap-1.5 font-medium">
-                <MapPin className="w-3 h-3 text-[#C5A059]" /> From (Abuja / Nigerian Hub)
+                <MapPin className="w-3 h-3 text-[#C5A059]" /> From (Origin Airport / Hub)
               </label>
               <input
                 type="text"
-                placeholder="e.g. Abuja (ABV)"
+                placeholder="e.g. Lagos (LOS)"
                 value={origin}
                 onChange={(e) => setOrigin(e.target.value)}
                 className="w-full bg-black/50 border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#C5A059] transition-colors"

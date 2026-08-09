@@ -9,9 +9,9 @@ export function Services({ onOpenBookingModal }: ServicesProps) {
     {
       icon: Plane,
       title: 'Executive & Diplomatic Charter',
-      subtitle: 'Abuja Base to 36 States & Worldwide',
+      subtitle: '36 States & Worldwide Destinations',
       description:
-        'Custom flight itineraries from Abuja (ABV) & Lagos (LOS) for government dignitaries, corporate CEOs, and VIP delegations with full protocol handling.',
+        'Custom flight itineraries across major Nigerian hubs for government dignitaries, corporate CEOs, and VIP delegations with full protocol handling.',
     },
     {
       icon: CreditCard,
@@ -25,21 +25,21 @@ export function Services({ onOpenBookingModal }: ServicesProps) {
       title: 'Offshore Oil & Gas Executive Transport',
       subtitle: 'Port Harcourt & Delta Coast Shuttles',
       description:
-        'Dedicated corporate shuttles connecting Abuja and Lagos corporate headquarters directly to offshore oil hubs in Port Harcourt, Eket, and Warri.',
+        'Dedicated corporate shuttles connecting major corporate headquarters directly to offshore oil hubs in Port Harcourt, Eket, and Warri.',
     },
     {
       icon: Sun,
       title: 'Hajj & Umrah VVIP Charters',
       subtitle: 'Direct Flights to Jeddah & Madinah',
       description:
-        'Luxury long-range group charters with dedicated Islamic dietary catering, private terminal check-ins in Abuja & Kano, and luxury Saudi transfers.',
+        'Luxury long-range group charters with dedicated Islamic dietary catering, private VIP terminal check-ins, and luxury Saudi transfers.',
     },
     {
       icon: ShieldAlert,
       title: 'West African Air Ambulance (Medevac)',
       subtitle: 'ICU Transport to Europe & Middle East',
       description:
-        'Rapid 24/7 airborne ICU deployments from Abuja or Lagos to specialist medical centers in London, Frankfurt, Geneva, or Dubai.',
+        'Rapid 24/7 airborne ICU deployments from regional hubs to specialist medical centers in London, Frankfurt, Geneva, or Dubai.',
     },
     {
       icon: Car,

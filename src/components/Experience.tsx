@@ -6,7 +6,7 @@ export function Experience() {
       icon: Coffee,
       title: 'Afro-Continental Fine Dining',
       description:
-        'Custom inflight dining curated by executive chefs in Abuja and Lagos—featuring fine Nigerian delicacies alongside international culinary selections and vintage champagne pairings.',
+        'Custom inflight dining curated by executive chefs—featuring fine Nigerian delicacies alongside international culinary selections and vintage champagne pairings.',
     },
     {
       icon: Globe,
@@ -18,7 +18,7 @@ export function Experience() {
       icon: Lock,
       title: 'Diplomatic & Executive Privacy',
       description:
-        'Specialized Presidential & VIP terminal protocols at Nnamdi Azikiwe International Airport (Abuja). Discreet tarmac transfers, encrypted flight manifests, and armed security escorts.',
+        'Specialized Presidential & VIP terminal protocols. Discreet tarmac transfers, encrypted flight manifests, and armed security escorts.',
     },
     {
       icon: Award,
@@ -35,13 +35,13 @@ export function Experience() {
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] uppercase tracking-[0.3em] text-[#C5A059]">
             <HeartHandshake className="w-3.5 h-3.5" />
-            <span>The Bluehorn Nigeria Advantage</span>
+            <span>The Bluehorn Advantage</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-light uppercase tracking-tight text-white">
-            Unrivaled Standards of <span className="gold-gradient-text font-semibold">Nigerian Private Flight</span>
+            Unrivaled Standards of <span className="gold-gradient-text font-semibold">Private Aviation</span>
           </h2>
           <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-            Operating from our primary hub at Nnamdi Azikiwe International Airport, Abuja—we deliver precision aviation logistics tailored for business leaders, government delegations, and private families.
+            Delivering precision aviation logistics tailored for business leaders, government delegations, and private families across key regional and international hubs.
           </p>
         </div>
 
@@ -75,13 +75,13 @@ export function Experience() {
           <div className="space-y-3 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start gap-2 text-xs text-[#C5A059] uppercase tracking-widest font-semibold">
               <MapPin className="w-4 h-4" />
-              <span>Abuja Operations Command Center</span>
+              <span>Flight Operations Command Center</span>
             </div>
             <h3 className="text-xl md:text-2xl font-light text-white uppercase tracking-wider">
-              Need Non-Stop Flight Clearances from <span className="gold-gradient-text font-semibold">Abuja to Europe or Asia?</span>
+              Need Non-Stop Transcontinental <span className="gold-gradient-text font-semibold">Flight Clearances?</span>
             </h3>
             <p className="text-gray-400 text-xs md:text-sm font-light max-w-xl">
-              Our 24/7 Abuja Flight Operations Center handles overflight permits, landing clearances across ECOWAS countries, diplomatic protocol, and VIP helicopter transfers to oilfields & private estates.
+              Our 24/7 Flight Dispatch Center handles overflight permits, landing clearances across ECOWAS countries, diplomatic protocol, and VIP helicopter transfers to oilfields & private estates.
             </p>
           </div>
           <a
@@ -89,7 +89,7 @@ export function Experience() {
             className="gold-button text-xs uppercase tracking-[0.2em] px-8 py-4 rounded-xl flex items-center gap-3 whitespace-nowrap shadow-xl shrink-0"
           >
             <Clock className="w-4 h-4" />
-            <span>Speak With Abuja Dispatch Desk</span>
+            <span>Speak With Dispatch Desk</span>
           </a>
         </div>
       </div>

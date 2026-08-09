@@ -30,7 +30,7 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
       passengers: '14 - 18 Passengers',
       cabinHeight: '6 ft 5 in (1.95 m)',
       baggageCapacity: '195 cu ft',
-      routeHighlight: 'Non-stop from Abuja (ABV) to New York (JFK) or Beijing (PEK)',
+      routeHighlight: 'Non-stop from West Africa to New York (JFK) or Beijing (PEK)',
       highlights: ['4 Living Zones', '100% Fresh Air Convection', 'High-Speed Global Satellite Wi-Fi', 'Full Berthing Beds'],
       image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=80',
     },
@@ -56,7 +56,7 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
       passengers: '12 - 14 Passengers',
       cabinHeight: '6 ft 2 in (1.88 m)',
       baggageCapacity: '140 cu ft',
-      routeHighlight: 'Non-stop from Abuja (ABV) to London (FAB) or Paris (LBG)',
+      routeHighlight: 'Non-stop from Lagos (LOS) to London (FAB) or Paris (LBG)',
       highlights: ['Tri-jet Short Field Runway Performance', 'Whisper-Quiet Cabin', 'Afro-Centric Luxury Interior', 'High Altitude Operations'],
       image: 'https://images.unsplash.com/photo-1519074069444-1ba4eaa1674a?auto=format&fit=crop&w=1200&q=80',
     },
@@ -69,7 +69,7 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
       passengers: '9 - 12 Passengers',
       cabinHeight: '6 ft 0 in (1.83 m)',
       baggageCapacity: '155 cu ft',
-      routeHighlight: 'Non-stop from Abuja (ABV) to Johannesburg (JNB) or Dubai (DWC)',
+      routeHighlight: 'Non-stop from Nigeria to Johannesburg (JNB) or Dubai (DWC)',
       highlights: ['Active Turbulence Reduction', '6-ft Flat Floor Cabin', 'Trans-Africa Non-Stop', 'HEPA Air Filtered'],
       image: 'https://images.unsplash.com/photo-1520437358207-323b43b5752b?auto=format&fit=crop&w=1200&q=80',
     },
@@ -85,14 +85,14 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[10px] uppercase tracking-[0.3em] text-[#C5A059]">
               <Plane className="w-3.5 h-3.5" />
-              <span>Abuja Hangar Fleet</span>
+              <span>Flagship Executive Fleet</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-light uppercase tracking-tight text-white">
               The Bluehorn <span className="gold-gradient-text font-semibold">Flagship Fleet</span>
             </h2>
           </div>
           <p className="text-gray-400 text-xs md:text-sm font-light max-w-md">
-            Stationed at Nnamdi Azikiwe International Airport, Abuja and Murtala Muhammed International Airport, Lagos—engineered for transoceanic range and maximum privacy.
+            Stationed across primary aviation hubs in Nigeria and ECOWAS regions—engineered for transoceanic range and maximum privacy.
           </p>
         </div>
 
@@ -205,7 +205,7 @@ export function Fleet({ onSelectAircraft }: FleetProps) {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent lg:bg-gradient-to-r lg:from-[#0A0F1A] lg:to-transparent" />
             <div className="absolute bottom-6 right-6 px-4 py-2 rounded-lg glass-card text-[11px] uppercase tracking-widest text-white border border-white/20">
-              Bluehorn Abuja Asset #{activeJet.id.toUpperCase()}
+              Bluehorn Flagship Asset #{activeJet.id.toUpperCase()}
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ export function Navbar({ onOpenBookingModal }: NavbarProps) {
               </span>
             </div>
             <span className="text-[10px] md:text-[11px] text-gray-400 font-light tracking-[0.35em] uppercase leading-tight mt-0.5">
-              AVIATION • ABUJA
+              PRIVATE AVIATION
             </span>
           </div>
         </a>

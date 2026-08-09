@@ -77,7 +77,7 @@ export function Preloader({ isLoading }: PreloaderProps) {
             </span>
           </div>
           <span className="text-[10px] text-gray-400 font-light tracking-[0.35em] uppercase block">
-            AVIATION NIGERIA • ABUJA HQ
+            LUXURY PRIVATE FLIGHTS
           </span>
         </div>
 

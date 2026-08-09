@@ -5,12 +5,12 @@ export function SafetyStats() {
     { label: 'Safety Record', value: '100%', subtext: 'Zero Incidents in West Africa' },
     { label: 'Flight Hours Logged', value: '50,000+', subtext: 'Across African & Global Airspace' },
     { label: 'Nigerian Destinations', value: '36 States', subtext: 'Executive Airfield Coverage' },
-    { label: 'Abuja Flight Operations Desk', value: '24/7/365', subtext: 'Real-Time Flight Dispatch' },
+    { label: 'Flight Operations Command', value: '24/7/365', subtext: 'Real-Time Flight Dispatch' },
   ];
 
   const safetyItems = [
     'NCAA Air Operator Certificate (AOC) compliant with international ICAO Annex safety norms.',
-    'Dual Senior Captain Flight Crews assigned to every long-range jet departure out of Abuja and Lagos.',
+    'Dual Senior Captain Flight Crews assigned to every long-range jet departure.',
     'Biannual simulator flight training at FlightSafety International & CAE centers in London & Montreal.',
     'Full hull & passenger liability insurance underwritten by leading international aviation syndicates.',
   ];
@@ -44,10 +44,10 @@ export function SafetyStats() {
               <span>NCAA & Global Compliance</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-light uppercase text-white tracking-wide">
-              Regulatory Excellence in <span className="gold-gradient-text font-semibold">Abuja, Nigeria</span>
+              Regulatory & Safety <span className="gold-gradient-text font-semibold">Excellence</span>
             </h3>
             <p className="text-gray-300 text-xs md:text-sm font-light leading-relaxed">
-              Operating out of Nnamdi Azikiwe International Airport (Abuja) and Murtala Muhammed International Airport (Lagos), Bluehorn Aviation strictly enforces international flight safety management systems (SMS).
+              Bluehorn Aviation strictly enforces international flight safety management systems (SMS) across all fleet operations.
             </p>
 
             <div className="space-y-3 pt-2">
